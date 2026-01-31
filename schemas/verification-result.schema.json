@@ -1,0 +1,16 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VerificationResult",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["fact_id", "status"],
+  "properties": {
+    "fact_id": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["MATCH", "MISMATCH", "UNKNOWN", "ABSTAIN"]
+    },
+    "expected_hash": { "type": ["string", "null"] },
+    "observed_hash": { "type": ["string", "null"] }
+  }
+}

@@ -1,0 +1,14 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CommitmentState",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["fact_id", "commitment_state"],
+  "properties": {
+    "fact_id": { "type": "string" },
+    "commitment_state": {
+      "type": "string",
+      "enum": ["COMMITTED", "ABSENT"]
+    }
+  }
+}
