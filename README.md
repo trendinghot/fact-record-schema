@@ -1,5 +1,5 @@
 ﻿# Fact Record Schema (FRS)
-
+Status: FRS v0.x is frozen. Future versions will be additive and backward-compatible.
 The Fact Record Schema (FRS) defines a minimal, deterministic format for recording
 facts under uncertainty without interpretation, judgment, or authority.
 
